@@ -1,0 +1,130 @@
+/* Reset some default styles */
+body, h1, h2, p, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f9ff, #d0e7ff);
+    color: #444;
+    line-height: 1.6;
+}
+
+header {
+    background: #f7d8e0;
+    color: #444;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #a1d9c7;
+    animation: slideIn 1s ease-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #6a4e7a;
+}
+
+footer {
+    background: #d29f9f;
+    color: #444;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #6a4e7a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+}
+
+.container {
+    background: #e7f9f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: 1px solid #b48b7f;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    resize: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+}
+
+textarea:focus {
+    border-color: #6a4e7a;
+    box-shadow: 0 0 8px rgba(189, 197, 202, 0.5);
+    outline: none;
+}
+
+button {
+    background: #6a4e7a;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #5a3e6a;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(106, 78, 122, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#outputContainer {
+    margin-top: 1rem;
+}
+
+#summary {
+    background: #f9f0f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 100px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+    font-size: 1rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
